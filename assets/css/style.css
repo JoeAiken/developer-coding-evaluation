@@ -145,6 +145,16 @@ body {
 
 }
 
+#skanska {
+
+	margin-top: 15px;
+}
+
+#rackroom {
+
+	margin-top: -12px;
+}
+
 .clientBox img {
 	
 	position: relative;
@@ -297,6 +307,7 @@ input {
     margin: 8px 0;
     font-family: font2;
     font-size: medium;
+    border-radius: 5px;
 }
 
 #submitBtn {
@@ -427,9 +438,20 @@ footer{
     	padding: 10px 0 10px 0;
     }
 
+    #skanska {
+    	margin-top: 50px;
+    }
+
+    #rackroom {
+
+    	margin-top: 10px;
+    }
+
     .clientBox img {
 		
-    	width: 50%;
+    	max-height: 100%;
+    	max-width: 100%;
+    	margin-top: 10%;
     }
 
     #clientRow1{
@@ -492,12 +514,36 @@ footer{
 
 	#fifththirdText {
 		text-align: center;
+		padding-bottom: 40px;
 	}
 
 	#fifththirdP {
 		font-size: small;
 	}
 
+	/*SECTION 5*/
+	#container5{
+		background-size: cover;
+		max-height: 100%;
+	}
+
+	#chhnText {
+		width: 80%;
+		margin-left: 50px;
+		margin-bottom: 20px;
+	}
+
+	#chhnPic {
+		margin-left: 10%;
+		margin-top: 4%;
+	}
+	
+	/*SECTION 6*/
+	
+	#submitBtn {
+
+		margin-left: 40%;
+	}
 
 	input {
 		padding: 0;
@@ -511,7 +557,7 @@ footer{
 	}
 
 	#map {
-		margin-left: 40%;
+		margin-left: 39%;
 	}
 
 }
