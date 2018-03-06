@@ -145,6 +145,14 @@ body {
 
 }
 
+#mobilePG {
+	display: none;
+}
+
+#mobileRackRoom {
+	display: none;
+}
+
 #skanska {
 
 	margin-top: 15px;
@@ -442,9 +450,25 @@ footer{
     	margin-top: 50px;
     }
 
+    #mobilePG {
+
+    	display: inline-block;
+    }
+
+    #mobileRackRoom {
+
+    	display: inline-block;
+ 		margin-top: -0.1px;
+    }
+
+    #pg {
+
+    	display: none;
+    }
+
     #rackroom {
 
-    	margin-top: 10px;
+    	display: none;
     }
 
     .clientBox img {
