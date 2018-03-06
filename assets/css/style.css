@@ -474,7 +474,7 @@ footer{
     }
 	
 	#goJo {
-		width: 100%;
+		width: 90%;
 		height: auto;
 		margin: 0;
 	}
@@ -519,6 +519,8 @@ footer{
 
 	#fifththirdP {
 		font-size: small;
+		width: 55%;
+		margin-left: 100px;
 	}
 
 	/*SECTION 5*/
@@ -559,5 +561,15 @@ footer{
 	#map {
 		margin-left: 39%;
 	}
+	
+	/*SECTION 6*/
 
+	#copyRight {
+		margin-left: 50px;
+	}
+
+	#icons {
+
+		margin-left: -95px;
+	}
 }
