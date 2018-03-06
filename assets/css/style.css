@@ -2,7 +2,19 @@
     box-sizing: border-box;
 }
 
-/*GRID SETUP*/
+
+
+[class*="col-"] {
+    float: left;
+    padding: 1%;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* For desktop: */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -16,10 +28,6 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-[class*="col-"] {
-    float: left;
-    padding: 1%;
-}
 
 /*CLEAR FLOATS*/
 .row::after {
@@ -30,6 +38,8 @@
 
 body {
 	width: 100%;
+	margin: 0px;
+    padding: 0px;
 	overflow-x: hidden;
 }
 
@@ -40,6 +50,7 @@ body {
 	background-size: 100% 100%;
 	padding-bottom: 5%;
 	font-family: font1;
+
 
 }
 
@@ -86,6 +97,12 @@ body {
     width: 100%;
   	background: linear-gradient(180deg, #e6e6e6 50%, white 50%);
   	font-family: font2;
+
+}
+
+#clientRow1 {
+	margin-left: 12%;
+	width: 100%;
 }
 
 #clientRow2 {
@@ -103,7 +120,6 @@ body {
 	padding-left: 85px;
 	height: 225px;
 	width: 475px;
-	margin-left: 12%;
 	-webkit-box-shadow: -20px 20px 70px 9px rgba(0,0,0,0.1);
  	-moz-box-shadow: -20px 20px 70px 9px rgba(0,0,0,0.1);
  	box-shadow: -20px 20px 70px 9px rgba(0,0,0,0.1);
@@ -130,10 +146,12 @@ body {
 }
 
 .clientBox img {
-
-	height: auto;
-	width: auto;
+	
+	position: relative;
 	text-align: center;
+	max-width: auto;
+    height: auto;
+
 }
 
 /*SECTION 3*/
@@ -141,10 +159,10 @@ body {
 
 	background-image: url("../images/pic-gojo-bg.png");
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 	border-top: 200px solid  hsl(0, 0%, 91%);
 	height: 100%;
-	width: 100%;
+
 	
 	
 }
@@ -154,6 +172,9 @@ body {
 	margin-left:13%;
 	margin-top: -13%;
 	margin-bottom: -18px;
+	max-width: 100%;
+    height: auto;
+
 
 	
 }
@@ -161,6 +182,8 @@ body {
 #goJoP {
 	width: 60%;
 	margin-top: -3%;
+	font-family: font2;
+	font-size: x-large;
 }
 
 #goJoBtn {
@@ -187,8 +210,12 @@ body {
 	background-size: 100% 100%;
 	padding-top: 100px;
 	overflow: hidden;
-
+	
     
+}
+
+#mobilefifththird {
+	display: none;
 }
 
 #fifththirdPic {
@@ -197,6 +224,13 @@ body {
 	margin-left: -10%;
 	max-width: 100%;
     height: auto;
+}
+
+#fifththirdP {
+	font-family: font2;
+	font-size: x-large;
+	color: white;
+	margin-top: -2%
 }
 
 #fifththirdBtn {
@@ -223,6 +257,7 @@ body {
 	background-size: 100% auto;
 	max-height: 520px;
 	overflow: hidden;
+
 }
 
 #chhnPic {
@@ -230,8 +265,91 @@ body {
 	width: 110%;
     margin-left: -15%;
     margin-top: -7%;
+}
+
+#chhnText {
+
+	margin-top: 8%;
+}
+
+/*SECTION 6*/
+
+#container6 {
+
+	background-color: #e6e6e6;
+	padding-top: 50px;
+}
+
+#connectText {
+
+	text-align: center;
+}
+
+form {
+
+	max-width: 100%;
+    height: auto;
+}
+
+input {
+	width: 100%;
+	padding: 12px 20px;
+    margin: 8px 0;
+    font-family: font2;
+    font-size: medium;
+}
+
+#submitBtn {
+
+	width: 25%;
+	background-color: dodgerblue;
+	color: white;
+	font-family: font1;
+	border-radius: 5px;
+}
+
+#message {
+	padding-bottom: 100px;
+}
+
+#contactInformation {
+
+	margin-left: 8%;
+	border-left: 2px solid lightgray;
+}
+
+#map {
+	
+	height: 100px;
+	width: 100px;
+	border-radius: 5px;
+}
+
+.contactP {
+	
+	font-family: font2;
+	margin-top: -2%;
+}
+
+/*FOOTER*/
+footer{
+	padding: 20px 20px 10px 20px;
+	background-color: lightgray;
 
 }
+
+
+
+#icons img{
+	padding-left: 20px;
+	margin-top: 3%;
+	margin-right: 5%;
+}
+
+#icons img:hover {
+	opacity: 0.6;
+}
+
 
 /*FONTS*/
 @font-face {
@@ -250,6 +368,150 @@ body {
 }
 
 @font-face {
-    font-family: font3;
-    src: url(Effra_Std_Rg.ttf);
+    font-family: font4;
+    src: url(../fonts/Effra_Std_Rg.ttf);
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+  	
+  	/*SECTION 1*/
+	.openingHeader {
+		font-size: 32px;
+
+	}
+	
+	#cardinalLogo{
+		width: 200px;
+		margin-left: 100px;
+		margin-top: 30px;
+		margin-bottom: 40px;
+	}
+
+	/*SECTION 2*/
+	
+	#overView {
+
+		margin: 0;
+	}
+
+	.subSection {
+		text-align: center;
+	}
+
+
+    #ourClients {
+
+    	width: 90%;
+    	height: 300px;
+    	text-align: center;
+    	margin-left: 15px;
+    	padding-top: 50px;
+    }
+
+    #ourClients h2 {
+    	margin-right: 65px;
+    }
+
+    .clientBox {
+
+    	width: 90%;
+    	height: 150px;
+    	margin-bottom: 10px;
+    	margin-top: 10px;
+    	overflow: hidden;
+    	padding: 10px 0 10px 0;
+    }
+
+    .clientBox img {
+		
+    	width: 50%;
+    }
+
+    #clientRow1{
+    	margin-left: 0;
+    }
+
+   	#clientRow2 {
+    	padding: 0;
+
+    }
+	
+	/*SECTION 3*/
+
+    #container3 {
+    	background-position: center;
+    	background-size: cover;
+    	border-top: 50px solid  hsl(0, 0%, 91%);
+    	padding-bottom: 25px;
+
+    }
+	
+	#goJo {
+		width: 100%;
+		height: auto;
+		margin: 0;
+	}
+
+	#goJoText {
+		width: 70%;
+		margin-left: 80px;
+	}
+
+
+	#goJoP {
+		width: 90%;
+		font-size: medium;
+		margin-bottom: 50px;
+
+	}
+
+	/*SECTION 4*/
+
+	#fifththirdPic {
+		display: none;
+	}
+	
+	#whiteSpace{
+		display: none;
+	}
+
+	#mobilefifththird {
+		display: inline;
+		margin: 0;
+	}
+	
+	#mobilePhone {
+		width: 100%;
+		height: 100%;
+	}
+
+	#fifththirdText {
+		text-align: center;
+	}
+
+	#fifththirdP {
+		font-size: small;
+	}
+
+
+	input {
+		padding: 0;
+	}
+	
+	#contactInformation {
+		text-align: center;
+		border-top: 2px solid lightgray;
+		border-left: 0;
+		margin: 0;
+	}
+
+	#map {
+		margin-left: 40%;
+	}
+
 }

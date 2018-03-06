@@ -5,6 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	
 </head>
 <body>
 	
@@ -79,7 +82,7 @@
 
 		<!-- Client Section -->
 		<div id = "clientRow1" class="row">
-			<div class="col-6 ourClients">
+			<div id = "ourClients" class="col-6 ourClients">
 					<h2>Our Clients</h2>
 					<p>Over the years, our team has had the distinction of working with a variety of brands in different industries. Here is a short list of some of the names we have worked with.</p>
 			</div>
@@ -100,11 +103,11 @@
 			</div>
 			
 			<div class="col-3 clientBox">
-				<img src="assets/logos/logo-skanska.png" alt="Skanska">
+				<img src="assets/logos/logo-skanska.png" alt="Skanska" style="margin-top: 15px;">
 			</div>
 
 			<div class="col-3 clientBox">
-				<img src="assets/logos/logo-rackroom.png" alt="Rack Room Shoes">
+				<img src="assets/logos/logo-rackroom.png" alt="Rack Room Shoes" style="margin-top: -12px;">
 			</div>
 
 			<div class="col-3 clientBox">
@@ -122,11 +125,11 @@
 				<img id="goJo" src="assets/images/pic-gojo.png">
 			</div>
 
-			<div class="col-6">
-				<h1 style="font-family: font1; font-size: 36px">Gojo</h1>
-				<p style="font-family: font3; font-size: large; margin-top: -2%;">INTERNET OF THINGS</p>
+			<div id= "goJoText" class="col-6">
+				<h1 style="font-family: font1; font-size: x-large;">Gojo</h1>
+				<p style="font-family: font3; font-size: medium; margin-top: -2%;">INTERNET OF THINGS</p>
 				<br>
-				<p id ="goJoP" style="font-family: font2; font-size: x-large;">Reducing the spread of hospital infections with the Internet of Things.</p>
+				<p id ="goJoP">Reducing the spread of hospital infections with the Internet of Things.</p>
 				<button id="goJoBtn" style="font-size: medium; font-family: font1" onclick="openGoJo()" >Learn More</button>
 			</div>
 		</div>
@@ -134,11 +137,15 @@
 
 	<section id ="container4">
 		<div class="row">
-			<div class="col-2"></div>
+			<div id="whiteSpace" class="col-2"></div>
+
+			<div id ="mobilefifththird" class="col-6">
+				<img id="mobilePhone" src="assets/images/pic-fifththird.png">
+			</div>
 
 			<div id="fifththirdText" class="col-4">
-				<h1 style="font-family: font1; font-size: 36px; color: white">Fifth Third Bank</h1>
-				<p style="font-family: font3; font-size: large; margin-top: -2%; color: white;">MOBILE APP</p>
+				<h1 style="font-family: font1; font-size: x-large; color: white">Fifth Third Bank</h1>
+				<p style="font-family: font3; font-size: medium; margin-top: -2%; color: white;">MOBILE APP</p>
 				<br>
 				<p style="font-family: font2; font-size: x-large; color: white; margin-top: -2%;">Reimagine what a mobile banking experience should be, focusing on the user rather than the technology.</p>
 				<button id = "fifththirdBtn"style="font-size: medium; font-family: font1" onclick="openFifthThird()" >View App</button>
@@ -156,15 +163,77 @@
 				<img id = "chhnPic" src="assets/images/pic-chhn.png">
 			</div>
 
-			<div class="col-6">
-				<h1 style="font-family: font1; font-size: 36px; color: white">The Christ Hospital Health Network</h1>
-				<p style="font-family: font3; font-size: large; margin-top: -2%; color: white;">DIGITAL PLATFORM</p>
+			<div id = "chhnText" class="col-6">
+				<h1 style="font-family: font1; font-size: x-large; color: white">The Christ Hospital <br> Health Network</h1>
+				<p style="font-family: font3; font-size: medium; margin-top: -2%; color: white;">DIGITAL PLATFORM</p>
 				<br>
-				<p style="font-family: font2; font-size: x-large; color: white; margin-top: -2%;">A digital front door to the finest patient experience.</p>
+				<p style="font-family: font2; font-size: x-large; color: white; margin-top: -2%;">A digital front door to the finest patient <br> experience.</p>
 				<button id = "fifththirdBtn"style="font-size: medium; font-family: font1" onclick="openFifthThird()" >Learn More</button>
 			</div>
 		</div>
 	</section>
+
+	<section id="container6">
+		<div class="row">
+			<div class="col-1"></div>
+
+			<div class="col-5">
+				<div id="connectText">
+					<h1 style="font-family: font2">Connect with Us</h1>
+					<p style="font-family: font2">Have a question or just want to chat? Get in touch.</p>
+				</div>
+
+				<form id="contactForm">
+					<input type="text" name="name" placeholder="Name">
+					<input type="email" name="email" placeholder="Email">
+					<input id= "message" type="message" name="message" placeholder="Message">
+					<input type="submit" value="Submit" id="submitBtn">
+				</form>
+			</div>
+			
+			<div id="contactInformation" class="col-5" >
+				<h3 style="font-family: font1">For inqueries, please contact:</h3>
+				<p class="contactP">Tracy Thompson</p>
+				<p class="contactP">tthompson@cardinalsolutions.com</p>
+				<p class="contactP" style="font-family: font1">704.936.4444</p>
+				<br>
+				<h3 style="font-family: font1" >Come by our office</h3>
+				<p class="contactP">222 S. Church St. Suite 500,</p>
+				<p class="contactP">Charlotte, NC 28202</p>
+				<br>
+				<div id="map"></div><br>
+				<a href="https://www.google.com/maps/search/parking+near+South+Church+Street,+Charlotte,+NC/@35.226711,-80.8538525,15z/data=!3m1!4b1" target="_blank">Find parking on our map!</a>
+
+			</div>
+
+			<div class="col-1"></div>
+		</div>
+	</section>
+		
+
+		<footer>
+			<div class="row">
+
+				<div class="col-4">
+					<p id="copyRight">2018 Cardinal Solutions. All rights reserved.</p>
+				</div>
+
+				<div class="col-4"></div>
+
+				<div class="col-4" id="icons" align="right">
+					<a href="https://twitter.com/CardinalNow?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="assets/icons/icon-twitter.svg"></a>
+					<a href="https://www.facebook.com/cardinalsolutions/" target="_blank"><img src="assets/icons/icon-facebook.svg"></a>
+					<a href="https://plus.google.com/+Cardinalsolutions" target="_blank"><img src="assets/icons/icon-g+.svg"></a>
+
+				</div>
+
+			</div>
+		</footer>
+
+		<!--GOOGLE MAPS API -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdZk6V8CY1mP3sCfhpjp8u2GrmmMuO0Gc&callback=initMap"
+	    async defer></script>
+
 
 </body>
 </html>
