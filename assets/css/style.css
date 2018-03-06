@@ -573,6 +573,8 @@ footer{
 
 	input {
 		padding: 0;
+		width: 75%;
+		margin-left: 55px;
 	}
 	
 	#contactInformation {
